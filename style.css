@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: hsla(0, 0%, 0%, 0.502);
+    position: fixed;
+    width: 90%;
+}
+
+#logo {
+    width: 6em;
+}
+
+#sections {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 120px;
+}
+
+.navlink {
+    position: relative;
+    text-decoration: none;
+}
+  
+  
+.navlink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+.navlink:hover::before {
+    transform: scaleX(1);
+}
+
+.navlink {
+    margin: 20px 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.buy-now-button {
+    background-color: #76B900;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 25px;
+    transition: ease-in-out 0.4s;
+}
+
+.buy-now-button:hover {
+    color: #76B900;
+    background-color: #fff;
+}
+
+
+#home {
+    background-image: url("./Assets/home-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 200px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+#home-content {
+    width: 40%;
+    color: #fff;
+}
+
+#home-content .buy-now-button {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#home-content .buy-now-button:hover {
+    color: #76B900;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#performance {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-title {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+#performance img {
+    width: 80%;
+    margin: 30px auto;
+}
+
+iframe {
+    margin: 30px auto;
+}
+
+#specs {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#specs ul {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.specs-li {
+    margin: 10px 20px 0;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#buy-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 10%;
+    padding-bottom: 50px;
+}
+
+#images {
+    display: flex;
+    justify-content:center;
+    margin: 20px 0;
+}
+
+#buy-now img {
+    width: 30%;
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 50px 200px;
+}
